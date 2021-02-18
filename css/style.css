@@ -1,0 +1,463 @@
+/* FONT */
+@font-face {
+    src: url('Montserrat.ttf');
+    font-family: 'noviFont';
+}
+
+
+/* Opsti tagovi */
+* {
+    margin:0px;
+    padding:0px;
+}
+
+ul {
+    list-style-type:none;
+}
+body {
+    font-family: 'noviFont';
+}
+
+a {
+    text-decoration:none;
+    color: rgb(67, 131, 216);
+}
+
+.container {
+    margin: 0px auto;
+    width:80%;
+}
+
+/* Header */
+#indexPocetna {
+    background-image: url(../img/rtanj333.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:481px;
+    width:100%;
+    box-sizing: border-box;
+}
+
+#top {
+    width:100%;
+    height: 80px;
+    background-color: #00000099;
+    position:fixed;
+}
+
+#logo {
+    float:left;
+    top:0;
+}
+
+#logo img {
+    width:80px;
+    height: 80px;
+}
+
+.navBar
+{
+    float: right;
+}
+
+.navBar ul  {
+    margin-top: 50px;
+}
+
+.navBar ul li {
+    display: inline;
+    margin-left: 40px;
+    font-size: 12pt;
+    text-shadow: 2px 2px 8px #000;
+}
+
+.navBar ul li a {
+     font-size:14px;
+     text-transform: uppercase;
+     color: #fff;
+}
+
+#slajderText {
+    padding-top: 300px;
+}
+
+#slajderText h1,#slajderText p{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: fit-content;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#slajderText h1 {
+    font-size:30pt;
+    color:#fff;
+}
+
+#slajderText p {
+    font-size:20pt;
+    color: #d3d3d3;
+}
+
+/* QUICK LINKS */
+#about {
+    margin: 0px auto;
+    width:80%;
+    height:600px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#about header {
+    width:100%;
+    height:50px;
+    margin-top: 20px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#about header h2 {
+    font-size:18pt;
+    text-transform: uppercase;
+    font-weight: bold;  
+    border-bottom: 1px solid #333; 
+    padding-bottom: 5px;
+    width:200px;   
+}
+
+#about .blokLevo {
+    width:400px;
+    height:170px;
+    display:flex;
+    justify-content: center;
+    animation: fadeIn;
+	animation-duration: 1.5s;
+	animation-delay: 1.5s;
+	animation-fill-mode: both;
+}
+
+#about .blokDesno {
+    width:350px;
+    height:170px;
+    display:flex;
+    justify-content: center;
+    animation: fadeInRight;
+	animation-duration: 1.5s;
+	animation-delay: 1.5s;
+	animation-fill-mode: both;
+}
+#about .blok figure {
+    width:80%;
+    height:100%;
+}
+#about .blok img {
+   height:90px;
+   width:90px;
+
+}
+
+#about .blok figcaption {
+    width:100%;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#about .blok figcaption a:hover{
+    color: red;
+}
+
+#about .blok figcaption a:visited {
+    color: rgb(88, 49, 88);
+}
+
+/* BANER */
+#banner {
+    width:100%;
+    height: 300px;
+    background-image: url(../img/rtanj3.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+    margin:20px 0px;
+}
+/* GALERIJA */
+#gallery {
+    height:950px;    
+}
+#gallery header {
+    width:100%;
+    text-align:center;
+    padding: 10px 0px 50px 0px;
+    height: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery header h2 {
+    text-transform: uppercase;
+    border-bottom: 1px solid #333;
+    width: 200px;
+    padding-bottom: 5px;
+}
+.galleryBlok {
+    height: 350px;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+.galleryDesno figure img, .galleryLevo figure img {
+    width:500px;
+    height:300px;
+    border-radius: 4px 8px;
+}
+
+.galleryBlok p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.galleryDesno figcaption p, .galleryLevo figcaption p {
+    text-align: center;
+    background-color : rgba(0, 0, 0, 0.2);
+    width:500px;
+    padding: 3px 0px;
+    border-radius: 4px 8px;
+}
+
+.galleryDesno figure img, .galleryDesno figcaption p  {
+    margin-left: 10px;
+}
+
+.galleryLevo figure img, .galleryLevo figcaption p {
+    margin-right: 10px;
+}
+
+/*  FUTER  */
+footer {
+    height:80px;
+    background-color: #262626;
+    display:flex;
+    align-items: center;
+   
+}
+
+footer .container {
+    height:100%
+}
+
+footer header {
+    display:flex;
+    align-items:center;
+}
+footer header p {
+    color: #fff;
+    font-size: 14px;
+}
+
+footer #footerIcons li {
+    display: inline-block;
+    margin-left:10px;
+    padding-top: 15px;
+}
+
+footer #footerIcons li img {
+    width:50px;
+    height:50px;
+}
+
+footer .container {
+    display:flex;
+    justify-content: space-between;
+}
+
+#footerMid {
+    display:flex;
+    align-items:center;
+    justify-content: start;
+}
+
+#footerMid a {
+    color: #fff;
+    text-decoration: underline;
+    margin-right: 20px;
+}
+
+/*  FORMA  */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.letusknow {
+    width:90%;
+    margin:0px auto;
+    height:800px;
+    padding-top: 20px;
+}
+
+main.contactBlok {
+    width:60%;
+}
+
+aside.contactBlok {
+    width:36%;
+}
+#forma {
+    height:600px;
+}
+
+#forma tr {
+    height:70px;
+}
+.contactBlok header h2,#contactInfo header h3{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.text-box {
+    padding: 10px 0px 10px 2px;
+    border-radius: 4px 8px;
+    width:250px;
+    border: 2px solid grey;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.naziv {
+    padding: 10px 20px 20px 0px;
+    font-weight: bold;
+    font-size:18px; 
+}
+
+.btn {
+    margin: 20px 0px 0px 5px;
+    padding: 10px;
+    border-radius: 4px 8px;
+    border: 1px solid #333;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #fff;
+    border: 1px solid #333;
+    color: #333;
+    cursor:pointer;
+    transform: all ease-in-out;
+	transition:0.5s;
+}
+
+/* KONTAKT INFORMACIJE */ 
+#contactInfo header h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.asideBlok {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.asideBlok img {
+    padding:15px 30px 0px 0px;
+    height:40px;
+}
+
+.asideBlok p{
+    font-weight: bold;
+    color:grey;
+    font-size: 20px;
+    margin-top:20px;  
+}
+
+#findus {
+    margin-top:50px;
+}
+
+#findus header {
+    text-align: center;
+    font-weight: bold;
+    font-size:20px;
+    padding: 15px 0px 30px 0px;
+}
+
+#mapa p{
+    text-align:center;
+}
+
+#contactBaner {
+    width:100%;
+    height: 300px;
+    background-image: url(../img/rtanj5.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 40% 60%;
+    margin:20px 0px;
+}
+#contactBaner-text {
+    text-align:center;
+    padding-top: 80px;
+}
+#contactBaner-text h3, #contactBaner-text p {
+    color: #fff;
+    font-size: 3em;
+}
+
+#auInfo {
+    width:100%;
+    height: 700px;
+    padding-top: 100px;
+}
+
+#auInfo p {
+    text-align: center;
+    font-size: 20px;
+    padding: 30px 0px;
+}
+
+.auBlok {
+    display:flex;
+    justify-content: center;
+}
+
+.auSlika img {
+    border-radius: 4px 8px;
+    height: 400px;
+    width:400px;
+}
+/* Animations */ 
+
+@keyframes fadeIn{
+	from {
+         margin-right:50px;
+          opacity:0.0;
+        }
+	to {
+        margin-right: 0px; 
+        opacity:1.0;
+    }
+
+}
+
+@keyframes fadeInRight{
+	from {
+         margin-left:50px;
+          opacity:0.0;
+        }
+	to {
+        margin-left: 10px; 
+        opacity:1.0;
+    }
+
+}
